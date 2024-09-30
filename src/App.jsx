@@ -1,20 +1,16 @@
-import Cards_Container from "./components/Cards_Container";
-import Navbar from "./components/Navbar";
-import Rcontainer from "./components/Recomendation/Rcontainer.jsx";
-import Recom from "./components/Sugest/Recom.jsx";
+import DashBoard from "./pages/DashBoard.jsx";
 
-import { Route, Router } from "react-router-dom";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
-
-      <Cards_Container />
-
-      <Recom />
-
-      <Rcontainer />
+      {/* WE WILL USE OUTLET HERE TO FIX THE HEADER AND FOOTER AND DEFAULT ROUTE
+      TO DASHBOARD */}
+      <DashBoard />
+      <Footer />
     </>
   );
 }

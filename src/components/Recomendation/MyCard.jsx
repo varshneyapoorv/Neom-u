@@ -5,11 +5,11 @@ function MyCard({ url, index }) {
   return (
     <>
       <div className="flex flex-col w-[16rem] h-[26rem] relative mt-[30px]">
-        <div className="overflow-hidden inline-block">
+        <div className="relative overflow-hidden inline-block">
           <img
             src={url}
             alt="PHOTO"
-            className="h-[20rem] transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-3 hover:filter hover:grayscale hover:brightness-90"
+            className="h-[20rem] transition-transform duration-700 ease-in-out hover:scale-110 hover:rotate-6 hover:brightness-75 hover:contrast-more: hover:hue-rotate-[270deg]"
           />
         </div>
 

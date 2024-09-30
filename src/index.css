@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "IvyMode";
+  src: url("../assets/fonts/IvyMode-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BrownMedium";
+  src: url("../assets/fonts/BrownMedium.ttf") format("truetype");
+}
+
+.IvyMode {
+  font-family: IvyMode;
+}
+
+.BrownMedium {
+  font-family: BrownMedium;
+}
+
+.BrownRegular {
+  font-family: BrownRegular;
+}

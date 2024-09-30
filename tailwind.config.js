@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         lora: ["Lora", "serif"],
+        source_serif: ["Source Serif 4", "serif"],
+        BrownMedium: ["BrownMedium", "sans-serif"],
       },
     },
   },
