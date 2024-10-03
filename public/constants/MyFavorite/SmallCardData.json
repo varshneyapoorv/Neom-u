@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "path": "/images/holiday_0.png",
+    "title": "Surfing at leasure"
+  },
+
+  {
+    "id": 2,
+    "path": "/images/rolce.png",
+    "title": "Enjoying in car"
+  },
+
+  {
+    "id": 3,
+    "path": "/images/trending2.jpg",
+    "title": "Surfing at leasure"
+  },
+  {
+    "id": 4,
+    "path": "/images/holiday_0.png",
+    "title": "Surfing at leasure"
+  },
+  {
+    "id": 5,
+    "path": "/images/rolce.png",
+    "title": "Enjoying in car"
+  },
+  {
+    "id": 6,
+    "path": "/images/holiday_0.png",
+    "title": "Surfing at leasure"
+  },
+
+  {
+    "id": 7,
+    "path": "/images/rolce.png",
+    "title": "Enjoying in car"
+  },
+
+  {
+    "id": 8,
+    "path": "/images/trending2.jpg",
+    "title": "Surfing at leasure"
+  },
+  {
+    "id": 9,
+    "path": "/images/holiday_0.png",
+    "title": "Surfing at leasure"
+  },
+  {
+    "id": 10,
+    "path": "/images/rolce.png",
+    "title": "Enjoying in car"
+  }
+]

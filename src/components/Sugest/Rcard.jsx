@@ -1,18 +1,18 @@
 import React from "react";
 
-function Rcard({ url }) {
+function Rcard({ key1, key2 }) {
   return (
-    <div className="flex flex-col w-[38rem] h-[29rem] mt-[20px] relative mb-[20px]">
+    <div className="flex flex-col w-[38rem] h-[29rem] mt-[20px] relative mb-[20px] shrink-0 ">
       <div className="w-full h-[20rem] overflow-hidden">
         <img
-          src="/images/Event-Banner.png"
+          src={key1}
           alt="PHOTO HERE"
           className="w-full h-[20rem] object-cover object-center rounded-lg transform transition-transform duration-[4s]  hover:scale-110"
         />
       </div>
 
       <div className="absolute top-[15px] left-[15px]">
-        <img src={url} alt="SMILEY HERE  " className="w-[45px] " />
+        <img src={key2} alt="SMILEY HERE  " className="w-[45px] " />
       </div>
       <div className="mt-[10px]">
         <h3 className="font-lora text-[22px] opacity-[0.9] ">

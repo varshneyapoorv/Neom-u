@@ -1,5 +1,6 @@
 import React from "react";
 import { TbWorld } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const toggleMenu = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <section className="flex gap-[45rem] h-[14vh]  bg-[rgb(252,250,248)] sticky ml-[-70px] ">
+    <section className="flex gap-[40rem] h-[14vh]  bg-[rgb(252,250,248)]  ml-[-70px]  ">
       {/* Logo Container */}
       <div className="w-[15vw] h-full bg-cover bg-center ml-[70px]  ">
         <img src="/images/logo-black.svg" alt="phot" />
@@ -16,10 +17,23 @@ const Navbar = () => {
       {/* Navigation Items */}
       <div className="flex items-center  w-full max-w-[80vw]">
         {/* Navigation Links */}
-        <ul className="flex items-center gap-6 text-[12px] font-medium text-gray-800 font-[Kanit]">
-          <li>Dashboard</li>
-          <li>My Favorites</li>
-          <li>Upcoming Events</li>
+        <ul className="flex items-center gap-6 text-[15px] font-sans text-gray-800 ">
+          <li className="border border-transparent hover:border-b-[#fa4664]">
+            <Link to="/" className="hover:text-[#fa4664]">
+              Dashboard
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/fav" className="hover:text-[#fa4664]">
+              My Favorites
+            </Link>
+          </li>
+          <li>
+            <Link to="/upc-events" className="hover:text-[#fa4664]">
+              Upcoming Events
+            </Link>{" "}
+          </li>
         </ul>
 
         {/* Icons and Logo Container */}

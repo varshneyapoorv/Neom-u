@@ -5,7 +5,7 @@ import { IoStarSharp } from "react-icons/io5";
 function MyCard({ url }) {
   return (
     <>
-      <div className="flex flex-col w-[20rem] h-[24rem] relative mt-[30px]">
+      <div className="flex flex-col w-[17rem] h-[24rem] relative mt-[30px]">
         <div className="overflow-hidden inline-block">
           <img
             src={url}

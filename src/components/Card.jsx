@@ -1,21 +1,17 @@
 import React from "react";
 import { TbWorld } from "react-icons/tb";
 
-const Card = ({ name }) => {
+const Card = ({ key1, key2 }) => {
   return (
-    <div className="flex gap-5">
-      <div className="flex w-[45vw] border-[1px] border-solid border-black h-[45vh] rounded-lg">
-        <div
-          className="w-[38%] bg-cover bg-center rounded-l-lg"
-          style={{
-            backgroundImage:
-              'url("https://vid.alarabiya.net/images/2023/05/09/d361d2eb-f13e-40e2-bdd8-c031071f5ead/d361d2eb-f13e-40e2-bdd8-c031071f5ead.jpg?width=372&format=jpg")',
-          }}
-        ></div>
+    <div className="flex ">
+      <div className="flex w-[38rem] border-[1px] border-solid border-black h-[45vh] rounded-lg ">
+        <div className="w-[14rem] bg-cover bg-center rounded-l-lg overflow-hidden">
+          <img src={key2} alt="images" className="h-full" />
+        </div>
         {/* <div className="flex  w-3/5 p-4"></div> */}
 
         <div className="pl-[15px] mt-[15px] w-[62%]">
-          <h3 className="text-[1.3rem] font-[kanit-300]">{name}</h3>
+          <h3 className="text-[1.3rem] font-[kanit-300]">{key1}</h3>
 
           <div className="flex gap-1 mt-[1px]">
             <div class="flex  text-pink-600">

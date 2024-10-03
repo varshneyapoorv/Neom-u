@@ -1,39 +1,20 @@
 import React from "react";
 import { CiHeart } from "react-icons/ci";
+import SmallCard from "../SmallCard";
 
 function MyCard({ url, index }) {
   return (
     <>
-      <div className="flex flex-col w-[16rem] h-[26rem] relative mt-[30px]">
-        <div className="relative overflow-hidden inline-block">
-          <img
-            src={url}
-            alt="PHOTO"
-            className="h-[20rem] transition-transform duration-700 ease-in-out hover:scale-110 hover:rotate-6 hover:brightness-75 hover:contrast-more: hover:hue-rotate-[270deg]"
-          />
-        </div>
+      <div className="relative">
+        <SmallCard url={url} />
 
-        <div className="flex">
-          <img src="/images/overwhelmed.svg" alt="" className="w-[14px]" />
-
-          <h4 className="text-[13px] font-sans mt-[1px] mr-[70px] ml-[5px]">
-            Overwhelmed
-          </h4>
-
-          <h4 className="text-[13px] font-sans mt-[2px]">Nov 10-29</h4>
-        </div>
-
-        <div className="mt-[10px]">
-          <h3 className="font-lora font-semibold">Surfing at leasure</h3>
-          <h4 className="text-[13px]">1100 AED/person</h4>
-        </div>
         <img
           src={index}
           alt="photo here"
-          className="w-[50px] absolute right-[10px] top-[220px]  "
+          className="w-[50px] absolute right-[14px] top-[230px]  "
         />
 
-        <button class="p-2 bg-transparent rounded-full absolute right-[10px] z-10">
+        <button class="p-2 bg-transparent rounded-full absolute top-[30px] right-[10px] z-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

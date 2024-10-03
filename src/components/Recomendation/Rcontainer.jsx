@@ -4,7 +4,7 @@ import MyCard from "./MyCard";
 function Rcontainer() {
   return (
     <>
-      <h1 className="text-3xl text-gray-900 font-sans mt-[60px]">
+      <h1 className="text-3xl text-gray-900 font-sans mt-[60px] mb-[40px]">
         Today's recommendations for you, Charlie!
       </h1>
 

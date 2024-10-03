@@ -1,9 +1,35 @@
 import React from "react";
 
 import Rcard from "./Rcard.jsx";
-import Button from "../Button.jsx";
+
+import Slider from "../Slider.jsx";
 
 function Recom() {
+  const details = [
+    {
+      path: "/images/Event-Banner.png",
+
+      mood: "/images/disappointed.svg",
+    },
+    {
+      path: "/images/holiday_0.png",
+      mood: "/images/overwhelmed.svg",
+    },
+    {
+      path: "/images/cusine_0.png",
+      mood: "/images/overwhelmed.svg",
+    },
+    {
+      path: "/images/rolce.png",
+
+      mood: "/images/overwhelmed.svg",
+    },
+    {
+      path: "/images/holiday_0.png",
+      mood: "/images/overwhelmed.svg",
+    },
+  ];
+
   return (
     <>
       <div className="w-1000px">
@@ -11,12 +37,13 @@ function Recom() {
           Charlie, hope we understand you better
         </h1>
 
-        <div className="flex w-full gap-[30px] w-1000px">
-          <Rcard url={"/images/disappointed.svg"} />
-          <Rcard url={"/images/overwhelmed.svg"} />
-        </div>
-
-        <Button />
+        <Slider
+          items={details}
+          visibleItemsCount={3}
+          CardComponent={Rcard}
+          key1={"path"}
+          key2={"mood"}
+        />
       </div>
     </>
   );

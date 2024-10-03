@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "url": "/images/spa_0.png",
+    "index": "/images/one.svg"
+  },
+  {
+    "id": 2,
+    "url": "/images/holiday_0.png",
+    "index": "/images/two.svg"
+  },
+  {
+    "id": 3,
+    "url": "/images/cusine_0.png",
+    "index": "/images/three.svg"
+  },
+  {
+    "id": 4,
+    "url": "/images/rolce.png",
+    "index": "/images/four.svg"
+  },
+  {
+    "id": 5,
+    "url": "/images/Event-Banner.png",
+    "index": "/images/five.svg"
+  }
+]

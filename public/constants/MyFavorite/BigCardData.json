@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "path": "/images/Event-Banner.png",
+    "title": "Explore the deep sea",
+    "date": "From Nov 10 to 29,2022",
+    "quantity": "AED 1800 per person"
+  },
+  {
+    "id": 2,
+    "path": "/images/holiday_0.png",
+    "title": "Explore the deep sea",
+    "date": "From Nov 10 to 29,2022",
+    "quantity": "AED 1800 per person"
+  },
+  {
+    "id": 3,
+    "path": "/images/cusine_0.png",
+    "title": "Explore the deep sea",
+    "date": "From Nov 10 to 29,2022",
+    "quantity": "AED 1800 per person"
+  },
+  {
+    "id": 4,
+    "path": "/images/holiday_0.png",
+    "title": "Explore the deep sea",
+    "date": "From Nov 10 to 29,2022",
+    "quantity": "AED 1800 per person"
+  },
+  {
+    "id": 5,
+    "path": "/images/Event-Banner.png",
+    "title": "Explore the deep sea",
+    "date": "From Nov 10 to 29,2022",
+    "quantity": "AED 1800 per person"
+  },
+  {
+    "id": 6,
+    "path": "/images/cusine_0.png",
+    "title": "Explore the deep sea",
+    "date": "From Nov 10 to 29,2022",
+    "quantity": "AED 1800 per person"
+  }
+]
