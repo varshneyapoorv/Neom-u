@@ -44,12 +44,12 @@ const SwiperComponent = ({
       </Swiper>
 
       {/* Custom Navigation Buttons */}
-      <div className="flex gap-[10px] mt-4 justify-center">
+      <div className="flex gap-[10px] mt-4 justify-start">
         <button
           className="border-black border-[1px] rounded-[100%] w-[45px] h-[45px] opacity-[0.5] px-[13px] flex items-center justify-center"
           onClick={handlePrev}
         >
-          <FaArrowLeft />
+          <FaArrowLeft/>
         </button>
         <button
           className="border-black border-[1px] rounded-[100%] w-[45px] h-[45px] opacity-[0.5] px-[13px] flex items-center justify-center"

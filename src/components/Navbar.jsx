@@ -1,6 +1,12 @@
 import React from "react";
 import { TbWorld } from "react-icons/tb";
+// import { IoNotifications } from "react-icons/io5";
+import { GrLanguage } from "react-icons/gr";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import Notification from "./Notification";
+import HamburgerMenu from "./HamburgerMenu";
+import Language from "./Language";
 
 const Navbar = () => {
   const toggleMenu = () => {
@@ -8,65 +14,55 @@ const Navbar = () => {
   };
 
   return (
-    <section className="flex gap-[40rem] h-[14vh]  bg-[rgb(252,250,248)]  ml-[-70px]  ">
-      {/* Logo Container */}
-      <div className="w-[15vw] h-full bg-cover bg-center ml-[70px]  ">
-        <img src="/images/logo-black.svg" alt="phot" />
-      </div>
-
-      {/* Navigation Items */}
-      <div className="flex items-center  w-full max-w-[80vw]">
-        {/* Navigation Links */}
-        <ul className="flex items-center gap-6 text-[15px] font-sans text-gray-800 ">
-          <li className="border border-transparent hover:border-b-[#fa4664]">
-            <Link to="/" className="hover:text-[#fa4664]">
-              Dashboard
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/fav" className="hover:text-[#fa4664]">
-              My Favorites
-            </Link>
-          </li>
-          <li>
-            <Link to="/upc-events" className="hover:text-[#fa4664]">
-              Upcoming Events
-            </Link>{" "}
-          </li>
-        </ul>
-
-        {/* Icons and Logo Container */}
-        <div className="flex items-center gap-[20px] ml-8">
-          {/* Notification Bell Icon */}
-          <img
-            src="/images/active.png"
-            alt="notification"
-            className="w-8 h-8 p-2"
-          />
-
-          {/* Navigation Logo and Menu Icon */}
-          <div className="flex items-center bg-white p-[2px]  rounded-full shadow-md gap-[2px]">
-            {/* Hamburger Menu Icon */}
-            <div
-              className="flex flex-col justify-center items-center w-8 h-8 cursor-pointer"
-              onClick={toggleMenu}
-            >
-              <span className="block w-4 h-[2px] bg-black mb-1"></span>
-              <span className="block w-4 h-[2px] bg-black mb-1"></span>
-              <span className="block w-4 h-[2px] bg-black"></span>
+    <header className="relative w-full bg-[#faf8f4] shadow-sm flex items-center z-[101] left-0 top-0 h-[56px] md:h-[100px]">
+      <div className="flex items-center justify-between w-full max-w-[90%] md:max-w-[85%] mx-auto relative">
+        {/* Branding and Logo */}
+        <div className="flex items-center">
+          <img src="/images/logo-black.svg" alt="Logo" className="md:w-20 w-16" />
+        </div>
+        
+        {/* Navbar */}
+        <nav className="flex items-center gap-4">
+          {/* Navigation Links */}
+          <ul className="flex gap-7 font-mullish text-lg">
+            <li className="text-primary hover:text-red-400 hover:underline cursor-pointer">
+              <Link to="/">Dashboard</Link>
+            </li>
+            <li className="hover:text-red-400 hover:underline cursor-pointer">
+              <Link to="/fav">My Favorites</Link>
+            </li>
+            <li className="hover:text-red-400 hover:underline cursor-pointer">
+              <Link to="/upcoming-events">Upcoming Events</Link>
+            </li>
+          </ul>
+    
+          {/* Icons */}
+          <div className="flex items-center space-x-4">
+            {/* Notification Icon */}
+            <button className="relative p-2">
+              <Notification/>
+              {/* <span className="absolute top-1 right-1 bg-red-500 rounded-full h-2 w-2"></span> */}
+            </button>
+    
+            {/* Menu and Profile Icons */}
+            <div className="flex items-center space-x-2">
+              <button className="p-2 bg-gray-100 rounded-full" onClick={toggleMenu}>
+                <HamburgerMenu />
+                {/* <RxHamburgerMenu size={20} className="text-black font-bold" /> */}
+              </button>
+              <button className="flex items-center justify-center w-8 h-8 rounded-full bg-red-500 text-white text-base font-semibold">
+                S
+              </button>
             </div>
-
-            {/* Profile Button */}
-            <button className="w-7 h-7  flex items-center justify-center bg-[#947e25] text-black rounded-full">
-              C
+    
+            {/* Language Icon */}
+            <button className="p-2">
+              <Language/>
             </button>
           </div>
-          {/* World Logo Icon */}
-          <TbWorld />
-        </div>
+        </nav>
       </div>
-    </section>
+    </header>
   );
 };
 

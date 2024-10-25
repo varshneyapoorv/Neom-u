@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "./Card"; // Your Card component
 import SwiperComponent from "./SwiperComponent"; // Use the Swiper component instead of Slider
 
